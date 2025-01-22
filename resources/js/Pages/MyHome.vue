@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <h1 class="text-3xl text-center">Welcome to Oasis!</h1>
+    <h1 class="text-3xl text-center my-5">Welcome to Oasis!</h1>
     <div class="card">
         <div class="card-body">
             <p class="text-lg">Hello my name is {{ name }}</p>
