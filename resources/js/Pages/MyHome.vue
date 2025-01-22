@@ -12,18 +12,19 @@ export default {
 </script>
 
 <template>
-    <h1 class="text-3xl">Welcome to Oasis!</h1>
-    <div class="card"></div>
+    <h1 class="text-3xl text-center">Welcome to Oasis!</h1>
+    <div class="card">
+        <div class="card-body">
+            <p class="text-lg">Hello my name is {{ name }}</p>
+            <input type="text" v-model="name" />
+            <p class="text-lg">Four Favourite Films</p>
+        </div>
 
-    <div class="card-body">
-        <p class="text-lg">Hello my name is {{ name }}.</p>
-        <input type="text" v-model="name" />
+        <ul>
+            <li v-for="film in films" :key="film"></li>
+            {{
+                films
+            }}
+        </ul>
     </div>
-
-    <ul>
-        <li v-for="film in films" :key="film"></li>
-        {{
-            film
-        }}
-    </ul>
 </template>
